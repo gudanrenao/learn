@@ -1,0 +1,37 @@
+spring:
+    profiles:
+      active: dev
+      include:
+          - db
+    main:
+      banner-mode: console
+    mvc:
+      static-path-pattern: resources/static/**
+      favicon:
+        enabled: false
+    thymeleaf:
+      cache: false
+      prefix: /templates/
+      encoding: utf-8
+      content-type: text/html
+      suffix: .html
+      mode: HTML5
+    jpa:
+      open-in-view: false  #是否允许在Web视图中进行延迟加载，一般设为false
+
+test:
+    value: zhangwen
+    random: ${random.uuid}
+    my-name: zhaoxin
+
+
+server:
+    port: 8081
+
+
+
+my:
+    my-name: zhaoxin
+    servers:
+       - dev.bar.com
+       - foo.bar.com

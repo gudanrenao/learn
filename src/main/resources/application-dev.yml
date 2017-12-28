@@ -1,0 +1,21 @@
+
+debug: false #debug日志打印开关
+
+spring:
+    output:
+        ansi:
+            enabled: always    #日志输入颜色
+    datasource:
+        url: jdbc:mysql://rm-2ze91r648jm1599e3o.mysql.rds.aliyuncs.com:3306/leplus_copy?useUnicode=true&characterEncoding=utf8
+        username: ceshi
+        password: LejiA917
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+#    h2:
+#        console:
+#            enabled: true
+
+test:
+    value-dev: zhangwen-dev
