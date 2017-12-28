@@ -13,9 +13,15 @@ import java.util.Map;
 @Controller
 public class HtmlController {
 
-    @GetMapping("index")
-    public String index(Map<String, Object> result) {
-        result.put("name", "zhang wen 123456");
+    @GetMapping("/index")
+    public String index() {
+
         return "/index";
+    }
+
+    @GetMapping("/test")
+    public String test(Map<String,Object> result) {
+        result.put("name","zhaoxin");
+        return "/test/index2";
     }
 }

@@ -16,6 +16,8 @@ spring:
 #    h2:
 #        console:
 #            enabled: true
-
 test:
     value-dev: zhangwen-dev
+logging:
+    level:
+        com.zhangwen: debug  #该包下日志打印级别
