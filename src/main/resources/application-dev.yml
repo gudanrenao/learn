@@ -13,9 +13,6 @@ spring:
         hibernate:
             ddl-auto: update
         show-sql: true
-#    h2:
-#        console:
-#            enabled: true
 test:
     value-dev: zhangwen-dev
 logging:

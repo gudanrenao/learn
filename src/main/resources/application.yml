@@ -1,23 +1,23 @@
 spring:
     profiles:
-      active: dev
-      include:
-          - db
+        active: dev
+        include:
+            - db
     main:
-      banner-mode: console
+        banner-mode: console
     mvc:
-      static-path-pattern: /static/**
-      favicon:
-        enabled: false
+        static-path-pattern: /static/**
+        favicon:
+            enabled: false
     thymeleaf:
-      cache: false
-      prefix: classpath:/templates/
-      encoding: utf-8
-      content-type: text/html
-      suffix: .html
-      mode: LEGACYHTML5
+        cache: false
+        prefix: classpath:/templates/
+        encoding: utf-8
+        content-type: text/html
+        suffix: .html
+        mode: LEGACYHTML5
     jpa:
-      open-in-view: false  #是否允许在Web视图中进行延迟加载，一般设为false
+        open-in-view: false  #是否允许在Web视图中进行延迟加载，一般设为false
 
 test:
     value: zhangwen
@@ -33,5 +33,5 @@ server:
 my:
     my-name: zhaoxin
     servers:
-       - dev.bar.com
-       - foo.bar.com
+        - dev.bar.com
+        - foo.bar.com

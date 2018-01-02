@@ -41,7 +41,9 @@ public class Example {
         System.out.println(config.getServers());
 
         log.debug("debug 模式启动。。。");
-        log.info("info 日志打印。。。");
+        log.info("info 日志打印2222223232。。。23223");
+
+        System.out.println("232323");
 
         return "Hello World!11222333333345787909";
 
