@@ -30,8 +30,8 @@ public class Example {
         this.config = config;
     }
 
-    @RequestMapping("/")
-    String home() {
+    @GetMapping("/home")
+    public String home() {
         int i = 12;
 
         System.out.println(value);
@@ -45,7 +45,7 @@ public class Example {
 
         System.out.println("232323");
 
-        return "Hello World!11222333333345787909";
+        return "success";
 
 
     }

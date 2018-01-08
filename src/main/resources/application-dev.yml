@@ -1,5 +1,5 @@
 
-debug: false #debug日志打印开关
+debug: true #debug日志打印开关
 
 spring:
     output:
