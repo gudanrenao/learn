@@ -33,7 +33,7 @@ public class HttpAspect {
     public void before(JoinPoint joinPoint) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
-        //获取请求路径，method,ip,方法路径，参数
+        //获取请求路径，method, ip, 方法路径，参数
         logger.info("url={},method={},ip={},class={},params={}",
                 request.getRequestURI()
                 , request.getMethod(), request.getRemoteAddr()

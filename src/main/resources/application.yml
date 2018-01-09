@@ -18,6 +18,10 @@ spring:
         mode: LEGACYHTML5
     jpa:
         open-in-view: false  #是否允许在Web视图中进行延迟加载，一般设为false
+    http:
+      encoding:
+        charset: UTF-8
+        enabled: true
 
 test:
     value: zhangwen
